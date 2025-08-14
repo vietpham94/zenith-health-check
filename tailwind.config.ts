@@ -52,6 +52,17 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				status: {
+					healthy: 'hsl(var(--status-healthy))',
+					'healthy-bg': 'hsl(var(--status-healthy-bg))',
+					'healthy-foreground': 'hsl(var(--status-healthy-foreground))',
+					degraded: 'hsl(var(--status-degraded))',
+					'degraded-bg': 'hsl(var(--status-degraded-bg))',
+					'degraded-foreground': 'hsl(var(--status-degraded-foreground))',
+					down: 'hsl(var(--status-down))',
+					'down-bg': 'hsl(var(--status-down-bg))',
+					'down-foreground': 'hsl(var(--status-down-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -67,6 +78,20 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'gradient-healthy': 'var(--gradient-healthy)',
+				'gradient-degraded': 'var(--gradient-degraded)',
+				'gradient-down': 'var(--gradient-down)',
+				'gradient-card': 'var(--gradient-card)'
+			},
+			boxShadow: {
+				'status': 'var(--shadow-status)',
+				'card': 'var(--shadow-card)'
+			},
+			transitionProperty: {
+				'all': 'var(--transition-all)',
+				'colors': 'var(--transition-colors)'
 			},
 			keyframes: {
 				'accordion-down': {
