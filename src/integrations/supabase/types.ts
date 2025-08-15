@@ -571,6 +571,20 @@ export type Database = {
           wins: number
         }[]
       }
+      get_public_profile_data: {
+        Args: { profile_id: string }
+        Returns: {
+          account_code: string
+          avatar_url: string
+          current_rank: number
+          full_name: string
+          gender: Database["public"]["Enums"]["gender_type"]
+          id: string
+          losses: number
+          total_matches: number
+          wins: number
+        }[]
+      }
       get_setting_int: {
         Args: { p_default: number; p_key: string }
         Returns: number
